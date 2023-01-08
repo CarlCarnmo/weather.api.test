@@ -5,6 +5,7 @@ from get_weather import get_weather
 
 
 #town_list = load_object_town()
+
 #Menu code
 def print_menu():
   print("1. weather by link")
@@ -16,11 +17,13 @@ def print_menu():
 
 def menu():
   while True:
+
     #Print the menu
     print_menu()
     
     # Get the user's choice
     choice = input("Enter your choice: ")
+
     # Run the chosen function
     if choice == "1":
         get_weather_from_link()
@@ -48,7 +51,6 @@ def get_weather_from_link():
     # Extract the x and y values from the match
     x = match.group(1)
     y = match.group(2)
-    
     
     #send request to get_weather(x,y).py
     get_weather(x,y)
