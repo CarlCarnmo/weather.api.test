@@ -2,7 +2,7 @@ import requests
 from data_class import *
 
 def get_weather(x,y):
-    api_key = "830bd06dee61e7801c474c5b8b96b27d"
+    api_key = "apikey" # Free at https://openweathermap.org/
     url = f"https://api.openweathermap.org/data/2.5/weather?lat={x}&lon={y}&appid={api_key}&units=metric"
 
 
